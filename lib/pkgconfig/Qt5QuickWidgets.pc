@@ -1,0 +1,14 @@
+prefix=F:/Program/ProMaker/CCPP/Compiler/Qt_MinGW64
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 QuickWidgets
+Description: Qt QuickWidgets module
+Version: 5.11.2
+Libs: -L${libdir} -lQt5QuickWidgetsd 
+Libs.private: -LF:\Program\ProMaker\CCPP\Compiler\3rd\openssl\lib -LG:\qt-everywhere-src-5.11.2\qtdeclarative\lib G:\qt-everywhere-src-5.11.2\qtdeclarative\lib\libQt5Quickd.a -LG:\qt-everywhere-src-5.11.2\qtbase\lib G:\qt-everywhere-src-5.11.2\qtbase\lib\libQt5Widgetsd.a -luxtheme -ldwmapi G:\qt-everywhere-src-5.11.2\qtbase\lib\libQt5Guid.a -lcomdlg32 -loleaut32 -limm32 -lglu32 -lopengl32 G:\qt-everywhere-src-5.11.2\qtbase\lib\libqtlibpngd.a G:\qt-everywhere-src-5.11.2\qtbase\lib\libqtharfbuzzd.a G:\qt-everywhere-src-5.11.2\qtdeclarative\lib\libQt5Qmld.a G:\qt-everywhere-src-5.11.2\qtbase\lib\libQt5Networkd.a -ldnsapi -liphlpapi F:\Program\ProMaker\CCPP\Compiler\3rd\openssl\lib\libssl.a F:\Program\ProMaker\CCPP\Compiler\3rd\openssl\lib\libcrypto.a -lgdi32 -lcrypt32 G:\qt-everywhere-src-5.11.2\qtbase\lib\libQt5Cored.a -lmpr -lnetapi32 -luserenv -lversion -lws2_32 -lkernel32 -luser32 -lshell32 -luuid -lole32 -ladvapi32 -lwinmm G:\qt-everywhere-src-5.11.2\qtbase\lib\libqtpcre2d.a  
+Cflags: -DQT_QUICKWIDGETS_LIB -I${includedir}/QtQuickWidgets -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Qml Qt5Quick Qt5Widgets
+

@@ -1,0 +1,14 @@
+prefix=F:/Program/ProMaker/CCPP/Compiler/Qt_MinGW64
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 PositioningQuick
+Description: Qt PositioningQuick module
+Version: 5.11.2
+Libs: -L${libdir} -lQt5PositioningQuickd 
+Libs.private: -LF:\Program\ProMaker\CCPP\Compiler\3rd\openssl\lib -LG:\qt-everywhere-src-5.11.2\qtdeclarative\lib G:\qt-everywhere-src-5.11.2\qtdeclarative\lib\libQt5Quickd.a -LG:\qt-everywhere-src-5.11.2\qtbase\lib G:\qt-everywhere-src-5.11.2\qtbase\lib\libQt5Guid.a -lcomdlg32 -loleaut32 -limm32 -lglu32 -lopengl32 G:\qt-everywhere-src-5.11.2\qtbase\lib\libqtlibpngd.a G:\qt-everywhere-src-5.11.2\qtbase\lib\libqtharfbuzzd.a G:\qt-everywhere-src-5.11.2\qtdeclarative\lib\libQt5Qmld.a G:\qt-everywhere-src-5.11.2\qtbase\lib\libQt5Networkd.a -ldnsapi -liphlpapi F:\Program\ProMaker\CCPP\Compiler\3rd\openssl\lib\libssl.a F:\Program\ProMaker\CCPP\Compiler\3rd\openssl\lib\libcrypto.a -lgdi32 -lcrypt32 -LG:\qt-everywhere-src-5.11.2\qtlocation\lib G:\qt-everywhere-src-5.11.2\qtlocation\lib\libQt5Positioningd.a G:\qt-everywhere-src-5.11.2\qtlocation\lib\libclip2trid.a G:\qt-everywhere-src-5.11.2\qtlocation\lib\libpoly2trid.a G:\qt-everywhere-src-5.11.2\qtlocation\lib\libclipperd.a G:\qt-everywhere-src-5.11.2\qtbase\lib\libQt5Cored.a -lmpr -lnetapi32 -luserenv -lversion -lws2_32 -lkernel32 -luser32 -lshell32 -luuid -lole32 -ladvapi32 -lwinmm G:\qt-everywhere-src-5.11.2\qtbase\lib\libqtpcre2d.a  
+Cflags: -DQT_POSITIONINGQUICK_LIB -I${includedir}/QtPositioningQuick -I${includedir}
+Requires: Qt5Quick Qt5Positioning Qt5Qml Qt5Core
+
